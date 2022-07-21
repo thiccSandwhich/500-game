@@ -15,3 +15,4 @@ color = Color( 0.0235294, 0.352941, 0.0823529, 1 )
 [node name="GridContainer" type="GridContainer" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
+columns = 10

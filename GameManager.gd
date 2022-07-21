@@ -20,6 +20,6 @@ func fillDeck():
 
 func dealDeck():
 	var c = 1
-	while c < 14:
-		Game.get_node($GridContainer).add_child(deck[c])
+	while c < 52:
+		Game.get_node("GridContainer").add_child(deck[c])
 		c += 1
