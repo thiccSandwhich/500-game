@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/Hand.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Player3Hand.gd" type="Script" id=2]
+
+[sub_resource type="Curve2D" id=1]
+_data = {
+"points": PoolVector2Array( 0, 0, 0, 0, 311, 736, -218.633, -109.317, 218.633, 109.317, 765, 743 )
+}
+
+[node name="Player3Hand" groups=["players"] instance=ExtResource( 1 )]
+script = ExtResource( 2 )
+
+[node name="Path2D" parent="." index="0"]
+position = Vector2( 845, -295 )
+rotation = 1.5708
+curve = SubResource( 1 )
